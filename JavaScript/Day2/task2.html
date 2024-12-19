@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+    <script>
+        function Result(){
+            var wordSearch = prompt("Enetr Word For Search:");
+            var sensetive = confirm("Do You Want Make It Sensetive?");
+            var arrayReversed = wordSearch.split("").reverse();
+            var stringReversed = arrayReversed.join("");
+            if(sensetive){
+                (wordSearch == stringReversed)?
+                    document.write("Yes palindrome"):
+                    document.write("No palindrome ");
+            }else{
+                (wordSearch.toLowerCase() == stringReversed.toLowerCase())?
+                    document.write("Yes  palindrome"):
+                    document.write("No palindrome ");
+            }
+        }
+        Result();
+    </script>
+</body>
+</html>

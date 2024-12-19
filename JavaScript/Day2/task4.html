@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+    <script>
+        var sizeOfNumbers = Number(prompt("Enter The Size Of Array Numbers : "));
+        var numbers = [];
+        for (var count = 0 ; count < sizeOfNumbers ; count++){
+            numbers[count] =Number(prompt("Enter Number : "));
+        }
+        numbers.sort(function(number1 , number2){return number1-number2});
+        document.write(numbers);
+        numbers.sort(function(number1 , number2){return number2-number1});
+        document.write(numbers);
+
+    </script>
+</body>
+</html>

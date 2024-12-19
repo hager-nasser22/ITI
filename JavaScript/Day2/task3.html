@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+    <script>
+        var numbers = [];
+        function add(numbers){
+            document.write("Result Of Adding =" + numbers[0] + numbers[1] + numbers[2] + "</br>");
+        }
+        function subtract(numbers){
+            document.write("Result Of Subtract = " + (numbers[0] - numbers[1] - numbers[2]) + "</br>");
+        }
+        function multiply(numbers){
+            document.write("Result Of  Multiply = " + numbers[0] * numbers[1] * numbers[2] + "</br>");
+        }
+        function divided(numbers){
+            document.write("Result Of divided  = " + numbers[0] / numbers[1] / numbers[2] + "</br>");
+        }
+        for (var count = 0 ; count < 3 ; count++){
+            numbers[count] =Number(prompt("Enter Number : "));
+            (numbers[count] == 0)?numbers[count] =Number(prompt("Please ,Enter Number Not 0: ")):"";
+        }
+        add(numbers);
+        subtract(numbers);
+        multiply(numbers);
+        divided(numbers);
+    </script>
+</body>
+</html>

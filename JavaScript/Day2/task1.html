@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+
+<body>
+    <script>
+        var IsExists = function () {
+            var name = prompt("Enter Your Name:");
+            var search = prompt("Enter Charcter For Search:");
+            if (name.includes(search)) {
+                return "Yse It,s Aleardy exist in index " + name.indexOf(search);
+            } else {
+                return "Ites Not Exists";
+            }
+        };
+        document.write(IsExists());
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+
+.custom-navbar {
+    background-color: #3e2723;
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc80; 
+}
+
+.user-info {
+    font-size: 1.1rem;
+    color: #f8f9fa; 
+    font-weight: bold;
+}
+
+.logout-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 6px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #ffcc80;
+    color: #3e2723;
+    border-color: #ffcc80;
+}
+
+
+
+:root {
+    --primary-color: #8B4513; 
+    --secondary-color: #D2691E;
+    --accent-color: #F4A460; 
+    --text-color: #3E2723; 
+    --background-light: #FDF7F0; 
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover no-repeat;
+    text-align: center;
+}
+header h1 {
+    font-size: 3rem;
+    color: white;
+}
+header .btn {
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; /* يجعل حجم الزر مضبوطًا على المحتوى */
+}
+
+header .btn a {
+    color: inherit; /* يجعل لون النص يأخذ نفس لون الزر */
+    text-decoration: none;
+    width: 100%; /* يجعل الرابط يغطي الزر بالكامل */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: inherit; /* يجعل الرابط يأخذ نفس المساحة الداخلية للزر */
+}
+
+header .btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+
+
+.about {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+}
+.about h2 {
+    color: var(--primary-color);
+}
+.about p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+.about img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.categories {
+    background: var(--background-light);
+}
+.categories h2 {
+    color: var(--primary-color);
+}
+.category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.category-card i {
+    color: var(--secondary-color);
+}
+
+.some-product {
+    padding: 60px 0;
+}
+.some-product h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.product-card .card-body {
+    padding: 20px;
+}
+.product-card h5 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+.product-card p {
+    color: var(--text-color);
+}
+.product-card .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.product-card .btn-custom {
+    background: var(--primary-color);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.product-card .btn-custom:hover {
+    background: var(--secondary-color);
+}
+
+
+.some-product .btn-danger {
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.some-product .btn-danger:hover {
+    background-color: var(--secondary-color);
+}
+
+.footer {
+    background: url('https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    padding: 60px 0;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* تعتيم أقوى */
+    z-index: 1;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+.footer h3 {
+    color: #ffc107;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer .input-group-text {
+    background: #ffc107;
+    border: none;
+    color: black;
+}
+
+.footer .form-control {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ffc107;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.footer .form-control::placeholder {
+    color: gray;
+}
+
+.footer .form-floating textarea {
+    height: 120px;
+}
+
+.footer .btn-custom {
+    background: #ffc107;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.footer .btn-custom:hover {
+    background: #e0a800;
+    color: white;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffc107;
+    color: black;
+    padding: 12px 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+#scrollToTop:hover {
+    background: #e0a800;
+}
+/* .footer {
+    background: #3E2723 url('https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center;
+    background-size: cover;
+    color: #FDF7F0;
+    text-align: center;
+    position: relative;
+}
+
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: white; 
+}
+.footer i {
+    color: #D2691E; 
+}
+.footer a {
+    color: #F4A460;
+    transition: color 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: white;
+}
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8B4513;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+#scrollToTop:hover {
+    background: #D2691E;
+} */
+
+@media (max-width: 768px) {
+    header {
+        height: 400px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .some-product .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
